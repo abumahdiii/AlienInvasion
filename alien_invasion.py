@@ -100,7 +100,8 @@ class AlienInvasion:
         if not self.aliens:
             # Destroy existing bullets and create new fleet.
             self.bullets.empty()
-            self._create_fleet()
+            # self._create_fleet()
+            self.game_active = False
 
     def update_screen(self):
         """Update images on the screen, and flip to the new screen."""
